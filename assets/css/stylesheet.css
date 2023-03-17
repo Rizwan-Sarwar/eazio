@@ -1236,7 +1236,7 @@ a.sidebarMenuIcon svg.bi.bi-list {
     }
     .rs_sidebar {
         width: 250px;
-        padding: 10px;
+        padding: 10px 10px 25px 10px;
     }
     .rs_sidebar .logo-wrap .rs_sidebarClose svg {
         width: 20px;
