@@ -589,7 +589,7 @@ a.circleBTN:hover {
 
 .rs_userPost .userDetail a.circleBTN {
     padding: 8px 14px;
-    margin: -3px -14px 0px 0px;
+    margin: -3px 3px 0px 0px;
     transition: .2s ease-in-out;
 }
 
@@ -728,13 +728,13 @@ a.circleBTN:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: -300px;
+    width: 300px;
     background-color: white;
     box-shadow: 5px 0 20px rgb(0 0 0 / 10%);
     z-index: 9999;
     height: 100%;
     overflow: hidden scroll;
-    padding: 20px;
+    padding: 20px 20px 40px 20px; 
     transform: translateX(-400px);
     transition: .3s ease-in-out;
     opacity: 0;
