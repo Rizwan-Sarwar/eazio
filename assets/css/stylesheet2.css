@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.contentWrapper {
+    background-color: #FF9002;
+    position: relative;
+    overflow: hidden;
+}
+
+.contentWrapper .ellipseWrap {
+    position: absolute;
+    height: 100vh;
+}
+
+.ellipseWrap svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.ellipseWrap svg.ellipse1 {top: -145px;}
+
+.ellipseWrap svg.ellipse2 {
+    /* width: 322px; */
+    top: -150px;
+}
+
+.ellipseWrap svg.ellipse3 {
+    /* width: 440px; */
+    top: -110px;
+}
+
+.ellipseWrap svg.ellipse4 {
+    /* width: 560px; */
+    /* top: 280px; */
+}
+.contentWrapper .container {
+    width: 883px;
+    margin: auto;
+    height: 100%;
+}
+
+.contentWrapper .container .rs_grid {
+    display: grid;
+    grid-template-columns: 300px 372px;
+    justify-content: right;
+    gap: 70px;
+    height: 100%;
+    position: relative;
+}
+
+.formWrapper {
+    height: 100%;
+    background-color: white;
+    padding: 51px 36px;
+    min-height: 100vh;
+}
+
+.dashboardImageWrap {
+    margin: 105px 0px 0px;
+}
+
+.dashboardImageWrap .logoWrao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 5px;
+}
+
+.dashboardImageWrap .logoWrao img {
+    width: 129px;
+    height: 33px;
+    opacity: 0;
+    animation: fade 3s cubic-bezier(0.075, 0.82, 0.165, 1) 1s forwards
+}
+
+.dashboardImageWrap .imageWrap {
+    display: flex;
+    margin: 0px 0px 15px;
+}
+
+.dashboardImageWrap .imageWrap img {
+    width: 300px;
+    height: 209px;
+    opacity: 0;
+    animation: fade 5s cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s forwards
+}
+
+.dashboardImageWrap .peraWrap {
+    opacity: 0;
+    animation: fade 3s cubic-bezier(0.075, 0.82, 0.165, 1) 2s forwards
+}
+
+.dashboardImageWrap .peraWrap p.boldAndLarge {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    margin: 0px 0px 5px;
+}
+
+.dashboardImageWrap .peraWrap p {
+    color: white;
+    font-size: 10px;
+    line-height: 1.3;
+}
+.formWrapper .formHeading {
+    margin: 0px 0px 34px;
+}
+
+.formWrapper .formHeading h1 {
+    font-size: 37px;
+    font-weight: 600;
+    margin: 0px 0px 5px;
+    color: #292929;
+}
+
+.formWrapper .formHeading p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(41, 41, 41, 0.5);
+}
+
+.formWrapper form {
+    margin: 0px 0px 45px;
+}
+
+.formWrapper form .field {
+    margin: 0px 0px 19px;
+}
+
+.formWrapper form .field .label-wrap {
+    margin: 0px 0px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formWrapper form .field .input-wrap {}
+
+.formWrapper form .field .label-wrap label {
+    font-size: 11px;
+    color: #000000;
+}
+
+.formWrapper form .field .input-wrap input {
+    height: 31px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    width: 100%;
+    padding: 0px 10px;
+    font-size: 11px;
+    color: black;
+    outline: unset;
+    transition: .2s ease-in-out;
+}
+
+.formWrapper form .field .input-wrap input::placeholder {
+    color: rgba(41, 41, 41, 0.3);
+}
+
+.formWrapper form .field .label-wrap label a {
+    display: inline-block;
+}
+
+.formWrapper form .field .label-wrap a {
+    font-size: 9.5px;
+    font-weight: 500;
+    color: #FF9002;
+}
+.formWrapper .grid-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formWrapper .buttonWrapper.grid-sm {}
+
+.formWrapper .buttonWrapper.grid-sm .col-sm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formWrapper .buttonWrapper.grid-sm input {
+    width: 12px;
+    margin: 8px 0px 0px;
+}
+
+.formWrapper .buttonWrapper.grid-sm label {
+    font-size: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.formWrapper .buttonWrapper.grid-sm .col-sm a {
+    font-size: 11px;
+    font-weight: 500;
+    color: white;
+    padding: 3px 10px 4px;
+    margin: 2px 0px 0px;
+    background-color: #FF9002;
+    border-radius: 3px;
+    transition: .2s ease-in-out;
+    border: 1px solid #FF9002;
+}
+
+.formWrapper .otherOptions {
+    align-items: start;
+}
+
+.formWrapper .otherOptions p.boldText {
+    font-size: 11.5px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0px 0px 3px;
+}
+
+.formWrapper .otherOptions p.lightText {
+    font-size: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+.formWrapper .otherOptions p.boldText a {
+    color: #FF9002;
+    font-weight: 600;
+    font-size: 12px;
+    transition: .2s ease-in-out;
+}
+
+.formWrapper .otherOptions p.lightText a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    transition: .2s ease-in-out;
+}
+.formWrapper .otherOptions p.lightText a:hover {
+    color: black;
+}
+
+.formWrapper .otherOptions p.boldText a:hover {
+    text-shadow: 0 0 rgb(255 144 2 / 50%);
+}
+
+.formWrapper .buttonWrapper.grid-sm .col-sm a:hover {background-color: white;color: #FF9002;}
+
+.formWrapper .buttonWrapper.grid-sm label:hover {
+    color: rgb(0 0 0 / 80%);
+}
+.formWrapper form .field .input-wrap input:focus {
+    border: 1px solid #FF9002;
+}
+.formWrapper .buttonWrapper.grid-sm .col-sm .label-wrap a {
+    color: #FF9002;
+    background-color: white;
+    border: transparent;
+    padding: 0px;
+    margin: 0px 0px 0px 3px;
+    font-size: 10px;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* MEDIA QUERY */
+
+
+@media (max-width: 1200px) {
+    .formWrapper .formHeading h1 {
+        font-size: 35px;
+        margin: 0px 0px 10px;
+    }
+}
+@media (max-width: 992px) {
+    .contentWrapper .container {
+        width: 700px;
+        margin: auto;
+    }
+    .formWrapper .formHeading h1 {
+        font-size: 28px;
+        margin: 0px 0px 8px;
+    }
+    .dashboardImageWrap .logoWrao img {
+        width: 120px;
+        height: auto;
+    }
+    .contentWrapper .container .rs_grid {
+        grid-template-columns: 300px 300px;
+        gap: 10px;
+    }
+    .formWrapper {
+        padding: 35px 15px;
+    }
+}
+@media (max-width: 768px) {
+    .contentWrapper .container .rs_grid .col:first-child {
+        display: none;
+    }
+    .contentWrapper .container .rs_grid {
+        grid-template-columns: 100%;
+        gap: 0px;
+    }
+    .contentWrapper .container {
+        width: 70%;
+        margin: auto;
+    }
+    .formWrapper {
+        padding: 51px 36px;
+    }
+}
+@media (max-width: 568px) {
+    .formWrapper {
+        padding: 25px 35px;
+    }
+    .formWrapper .formHeading h1 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .formWrapper form {
+        margin: 0px 0px 30px;
+    }
+    .formWrapper .otherOptions {
+        align-items: start;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 15px;
+    }
+    .formWrapper .otherOptions .col-sm {
+        width: 100%;
+    }
+    .formWrapper .otherOptions .socialIcons a {
+        padding: 8px 6px;
+        display: inline-block;
+    }
+    .formWrapper .otherOptions p.lightText {
+        margin: 15px 0px 0px;
+        justify-content: center;
+        font-size: 9px;
+        gap: 8px;
+    }
+}
+@media (max-width: 425px) {
+    .contentWrapper .container {
+        width: 85%;
+    }
+    .formWrapper {
+        padding: 25px 15px;
+    }
+    .formWrapper form {
+        margin: 0px 0px 25px;
+    }
+}
