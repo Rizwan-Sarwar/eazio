@@ -313,9 +313,15 @@ body {
         grid-template-columns: 100%;
         gap: 0px;
     }
-    .contentWrapper .container {
+    /* .contentWrapper .container {
         width: 70%;
         margin: auto;
+    } */
+    .contentWrapper .container {
+        width: 70%;
+        margin: 10% auto;
+        border-radius: 20px;
+        overflow: hidden;
     }
     .formWrapper {
         padding: 51px 36px;
@@ -353,8 +359,12 @@ body {
     }
 }
 @media (max-width: 425px) {
-    .contentWrapper .container {
+    /* .contentWrapper .container {
         width: 85%;
+    } */
+    .contentWrapper .container {
+        width: calc(100% - 32px);
+        margin: 16px auto;
     }
     .formWrapper {
         padding: 25px 15px;
